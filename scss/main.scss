@@ -876,6 +876,7 @@ header {
 }
 
 .about {
+    overflow: hidden;
     .about-content {
         display: flex;
         align-items: stretch;
@@ -1168,6 +1169,7 @@ header {
 
 .projects {
     margin-top: 100px;
+    overflow: hidden;
 
     .projects-content {
         display: flex;
@@ -1317,7 +1319,7 @@ header {
             align-items: center;
 
             .project {
-                margin-bottom: 40px;
+                margin-bottom: 0;
                 order: 1;
             }
 
@@ -1335,7 +1337,7 @@ header {
             width: 100%;
             .project,
             .project:first-child {
-                margin-bottom: 40px;
+                margin-bottom: 0;
             }
         }
     }
@@ -1811,6 +1813,10 @@ html[dir="ltr"] {
     .services {
         background-position: center left;
         background-image: url("../images/icons/couch2-en.png");
+
+        @media(max-width:992px){
+            background-image: none;
+        }
     }
 
     .services a.s-btn:after,

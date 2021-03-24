@@ -75,6 +75,7 @@ $(window).on("load", function () {
       $(".sm-slide .top-dropDown").css("display", "none");
 
       // add swipers
+      moveProject();
       $('.swiper-container-here').addClass('s-swiper-container');
       $('.swiper-container-here .swiper-wrapper-here').addClass('swiper-wrapper');
       $('.swiper-container-here .swiper-slide-here').addClass('swiper-slide');
@@ -88,6 +89,12 @@ $(window).on("load", function () {
        $('.swiper-container-here .swiper-wrapper-here').removeClass('swiper-wrapper');
        $('.swiper-container-here .swiper-slide-here').removeClass('swiper-slide');
     }
+  }
+
+  function moveProject(){
+    let p = document.getElementById('movingProject');
+    p.remove();
+    document.getElementById('moveProjectHere').append(p);
   }
 
   changeSlide();
