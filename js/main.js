@@ -69,14 +69,24 @@ $(window).on("load", function () {
   });
 
   function changeSlide() {
-    if (window.innerWidth <= 1200) {
+    if (window.innerWidth <= 992) {
       $(".sm-slide").removeClass("top-setting");
       $(".sm-slide").addClass("slide");
       $(".sm-slide .top-dropDown").css("display", "none");
+
+      // add swipers
+      $('.swiper-container-here').addClass('s-swiper-container');
+      $('.swiper-container-here .swiper-wrapper-here').addClass('swiper-wrapper');
+      $('.swiper-container-here .swiper-slide-here').addClass('swiper-slide');
     } else {
       $(".sm-slide").addClass("top-setting");
       $(".sm-slide").removeClass("slide");
       $(".sm-slide .top-dropDown").css("display", "flex");
+
+       // remove swipers
+       $('.swiper-container-here').removeClass('s-swiper-container');
+       $('.swiper-container-here .swiper-wrapper-here').removeClass('swiper-wrapper');
+       $('.swiper-container-here .swiper-slide-here').removeClass('swiper-slide');
     }
   }
 
@@ -128,6 +138,52 @@ $(window).on("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  var mySwiper2 = new Swiper('.s-swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    updateOnWindowResize: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    autoplay: false,
+    allowTouchMove: false,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        allowTouchMove: true,
+        autoplay: {
+          delay: 4000,
+        }
+      },
+      576: {
+        slidesPerView: 2,
+        allowTouchMove: true,
+        autoplay: {
+          delay: 4000,
+        }
+      },
+      0: {
+        slidesPerView: 1,
+        allowTouchMove: true,
+        autoplay: 4000,
+      }
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  });
+
+  if (window.innerWidth <= 1200 && $('.s-swiper-container').length) {
+    setInterval(function () {
+      mySwiper2.forEach(element => {
+        element.slideNext();
+      });
+    }, 4000);
+  }
 
   window.addEventListener("scroll", scrolled);
 
