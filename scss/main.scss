@@ -1615,6 +1615,34 @@ footer {
             }
         }
 
+        .social {
+            justify-content: flex-start;
+            margin-top:25px;
+            
+            .social-icon {
+                margin: 0 3px;
+    
+                a {
+                    height: 40px;
+                    width: 40px;
+                    background-color: rgb(103, 98, 149);
+                    border-radius: 100%;
+                    font-size: 20px;
+                    transition: all 0.3s;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &:hover {
+                    a {
+                        background-color: $color2;
+                    }
+                }
+            }
+        }
+
         .s-list {
             max-height: 150px;
             display: flex;

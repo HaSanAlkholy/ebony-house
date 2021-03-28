@@ -1754,6 +1754,32 @@ footer .footer-top ul li:hover a {
   color: #80b9ff;
 }
 
+footer .footer-top .social {
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+footer .footer-top .social .social-icon {
+  margin: 0 3px;
+}
+
+footer .footer-top .social .social-icon a {
+  height: 40px;
+  width: 40px;
+  background-color: #676295;
+  border-radius: 100%;
+  font-size: 20px;
+  transition: all 0.3s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-top .social .social-icon:hover a {
+  background-color: #80b9ff;
+}
+
 footer .footer-top .s-list {
   max-height: 150px;
   display: flex;
