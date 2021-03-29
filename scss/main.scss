@@ -154,7 +154,7 @@ nav {
             }
         }
 
-        .drop-link {
+        li {
             color: $color1;
             white-space: nowrap;
             margin-bottom: 10px;
@@ -165,12 +165,13 @@ nav {
             a {
                 color: inherit;
             }
-            
+
             &:last-of-type {
                 border-bottom: 0;
                 margin-bottom: 0;
                 padding-bottom: 0;
             }
+
             &:hover {
                 color: $color2;
 
@@ -311,9 +312,7 @@ nav {
                         min-width: 130px;
                         flex-direction: column;
 
-                        & > a,
-                        .in-menu > .setting-anchor,
-                        .in-menu > .top-dropDown > .drop-links > .drop-link {
+                        & > li {
                             color: $color1;
                             font-size: 15px;
                             font-weight: 500;
@@ -425,7 +424,7 @@ nav {
                             display: flex;
                             text-align: start;
 
-                            .drop-link {
+                            li {
                                 padding: 10px 0;
                                 color: $color1;
                                 border-bottom: 0;

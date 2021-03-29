@@ -329,7 +329,7 @@ nav .top-setting .top-dropDown:before {
   border-bottom-color: white;
 }
 
-nav .top-setting .drop-link {
+nav .top-setting li {
   color: #504b7f;
   white-space: nowrap;
   margin-bottom: 10px;
@@ -338,21 +338,21 @@ nav .top-setting .drop-link {
   font-size: 16px;
 }
 
-nav .top-setting .drop-link a {
+nav .top-setting li a {
   color: inherit;
 }
 
-nav .top-setting .drop-link:last-of-type {
+nav .top-setting li:last-of-type {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-nav .top-setting .drop-link:hover {
+nav .top-setting li:hover {
   color: #80b9ff;
 }
 
-nav .top-setting .drop-link:hover a {
+nav .top-setting li:hover a {
   color: inherit;
 }
 
@@ -492,9 +492,7 @@ nav .nava .nava-content > ul > li > .top-dropDown {
   flex-direction: column;
 }
 
-nav .nava .nava-content > ul > li > .top-dropDown > a,
-nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .setting-anchor,
-nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .top-dropDown > .drop-links > .drop-link {
+nav .nava .nava-content > ul > li > .top-dropDown > li {
   color: #504b7f;
   font-size: 15px;
   font-weight: 500;
@@ -502,16 +500,12 @@ nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .top-dropDown > .dr
   text-transform: capitalize;
 }
 
-nav .nava .nava-content > ul > li > .top-dropDown > a:last-child,
-nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .setting-anchor:last-child,
-nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .top-dropDown > .drop-links > .drop-link:last-child {
+nav .nava .nava-content > ul > li > .top-dropDown > li:last-child {
   margin-bottom: 0;
   border-bottom: none;
 }
 
-nav .nava .nava-content > ul > li > .top-dropDown > a:hover,
-nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .setting-anchor:hover,
-nav .nava .nava-content > ul > li > .top-dropDown .in-menu > .top-dropDown > .drop-links > .drop-link:hover {
+nav .nava .nava-content > ul > li > .top-dropDown > li:hover {
   color: #80b9ff;
 }
 
@@ -607,22 +601,22 @@ nav .nava .nava-content .nava-head {
     display: flex;
     text-align: start;
   }
-  nav .nava .nava-content > ul li > .top-dropDown .drop-link {
+  nav .nava .nava-content > ul li > .top-dropDown li {
     padding: 10px 0;
     color: #504b7f;
     border-bottom: 0;
     margin: 0;
   }
-  nav .nava .nava-content > ul li > .top-dropDown .drop-link:last-child {
+  nav .nava .nava-content > ul li > .top-dropDown li:last-child {
     padding-bottom: 0;
   }
-  nav .nava .nava-content > ul li > .top-dropDown .drop-link a {
+  nav .nava .nava-content > ul li > .top-dropDown li a {
     color: inherit;
   }
-  nav .nava .nava-content > ul li > .top-dropDown .drop-link:hover {
+  nav .nava .nava-content > ul li > .top-dropDown li:hover {
     color: #80b9ff;
   }
-  nav .nava .nava-content > ul li > .top-dropDown .drop-link:hover a {
+  nav .nava .nava-content > ul li > .top-dropDown li:hover a {
     color: inherit;
   }
   nav .nava .nava-content > ul .home {
