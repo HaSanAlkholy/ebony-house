@@ -161,6 +161,11 @@ nav {
             display: block;
             transition: all 0.3s ease-in-out;
             font-size: 16px;
+
+            a {
+                color: inherit;
+            }
+            
             &:last-of-type {
                 border-bottom: 0;
                 margin-bottom: 0;
@@ -168,6 +173,10 @@ nav {
             }
             &:hover {
                 color: $color2;
+
+                a {
+                    color: inherit;
+                }
             }
         }
 
@@ -418,11 +427,24 @@ nav {
 
                             .drop-link {
                                 padding: 10px 0;
+                                color: $color1;
                                 border-bottom: 0;
                                 margin: 0;
 
                                 &:last-child {
                                     padding-bottom: 0;
+                                }
+
+                                a {
+                                    color: inherit;
+                                }
+
+                                &:hover {
+                                    color: $color2;
+
+                                    a {
+                                        color: inherit;
+                                    }
                                 }
                             }
                         }
@@ -1145,7 +1167,7 @@ header {
 
         .head {
             text-align: center;
-            margin-bottom:40px;
+            margin-bottom: 40px;
         }
 
         a.s-btn {
@@ -1161,7 +1183,7 @@ header {
             margin: 0 0 30px 0;
         }
 
-        .service{
+        .service {
             margin: 0 auto;
         }
     }
@@ -1617,11 +1639,11 @@ footer {
 
         .social {
             justify-content: flex-start;
-            margin-top:25px;
-            
+            margin-top: 25px;
+
             .social-icon {
                 margin: 0 3px;
-    
+
                 a {
                     height: 40px;
                     width: 40px;
@@ -1842,7 +1864,7 @@ html[dir="ltr"] {
         background-position: center left;
         background-image: url("../images/icons/couch2-en.png");
 
-        @media(max-width:992px){
+        @media (max-width: 992px) {
             background-image: none;
         }
     }

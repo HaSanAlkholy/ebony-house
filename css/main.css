@@ -338,6 +338,10 @@ nav .top-setting .drop-link {
   font-size: 16px;
 }
 
+nav .top-setting .drop-link a {
+  color: inherit;
+}
+
 nav .top-setting .drop-link:last-of-type {
   border-bottom: 0;
   margin-bottom: 0;
@@ -346,6 +350,10 @@ nav .top-setting .drop-link:last-of-type {
 
 nav .top-setting .drop-link:hover {
   color: #80b9ff;
+}
+
+nav .top-setting .drop-link:hover a {
+  color: inherit;
 }
 
 nav .top-setting:hover .setting-anchor {
@@ -601,11 +609,21 @@ nav .nava .nava-content .nava-head {
   }
   nav .nava .nava-content > ul li > .top-dropDown .drop-link {
     padding: 10px 0;
+    color: #504b7f;
     border-bottom: 0;
     margin: 0;
   }
   nav .nava .nava-content > ul li > .top-dropDown .drop-link:last-child {
     padding-bottom: 0;
+  }
+  nav .nava .nava-content > ul li > .top-dropDown .drop-link a {
+    color: inherit;
+  }
+  nav .nava .nava-content > ul li > .top-dropDown .drop-link:hover {
+    color: #80b9ff;
+  }
+  nav .nava .nava-content > ul li > .top-dropDown .drop-link:hover a {
+    color: inherit;
   }
   nav .nava .nava-content > ul .home {
     order: -1;
